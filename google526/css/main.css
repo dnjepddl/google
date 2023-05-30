@@ -27,6 +27,7 @@ nav span {
   background-color: rgba(0, 0, 0, 0.2);
   top: -3px;
   left: -8px;
+  opacity: 0;
 }
 nav a img {
   width: 15px;
@@ -50,7 +51,7 @@ nav a #login {
 #imgs:hover {
   border-bottom: 1px solid #333;
 }
-#menu:hover {
+#menu span:hover {
   opacity: 1;
 }
 /* main_wrap */
