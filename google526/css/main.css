@@ -89,6 +89,8 @@ nav a #login {
   margin-left: 5px;
 }
 .plus{
+  max-width: 500px;
+  min-height: 50px;
   width: 50%;
   margin: 0 auto;
 }
@@ -133,8 +135,9 @@ nav a #login {
   right: 0;
   font-size: 14px;
   transition: 1s;
+  opacity: 0;
 }
-.hover_bg{
+.bg{
   width: 60px;
   height: 60px;
   border-radius: 50%;
