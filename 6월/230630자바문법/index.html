@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>검색창 출력 연습(자바스크립)</title>
+  </head>
+  <body>
+    <label for="name">이름을 입력하세요</label>
+    <input type="text" id="name" />
+    <button onclick="greet()">인사하기</button>
+    <p id="greeting"></p>
+    <!-- 자바스크립트 -->
+    <script>
+      function greet() {
+        var nameInput = document.getElementById("name");
+        var name = nameInput.value;
+        var greetingElement = document.getElementById("greeting");
+        // greetingElement.textContent = "안녕하세요," + name + "님!"
+        greetingElement.textContent = `안녕하세요, ${name}님!`;
+      }
+    </script>
+  </body>
+</html>
+
+
+6/30
+datatype
+자료형
+-기본유형 : 숫자형, 문자열, 논리형
+-복합유형 : 배열 객체
+-특수유형 : undefined / null
+
+숫자형
+ex) var birthYear = 2000;
+
+문자열
+ex) "", '' <<< 이 안에 글자
+var greeting = "hello";
+var birthYear = "2000"; << 이것도 문자열 why 따운표 안에 들어가 있기때문
+
+논리형
+참(true) / 거짓(false)
+
+배열
+하나의 변수에 여러 값을 저장합니다. ex) var seasons = ["봄" , "여름" , "가을" , "겨울"]
+대괄호로 묶으줌
+
+객체
+함수와 속성을 함계 포함한다
+ex) var data = new Date()
+
+특수유형
+undefined / null
+undefined - 변수 선언만 하고 값을 할당하지 않은 변수는 undefined 상태가 된다.
+null - 값이 유효하지 않을때의 상태이다.
+=================================================================================================
+숫자형
+정수 / 실수
+-정수-
+10진수 - 0~9
+8진수- 0~7 ex) 012,013,02000
+16진수 - 0~9와 알파벳 ex) 0xfff
+
+배열
+배열명["값1" , "값2" , .....]

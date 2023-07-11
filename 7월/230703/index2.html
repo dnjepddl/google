@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가격비교</title>
+  </head>
+  <body>
+    <h1>물건 가격 비교</h1>
+    <label for="number">가격1 : </label>
+    <input type="number" id="price1" />
+    <label for="number">가격2 : </label>
+    <input type="number" id="price2" />
+    <button onclick="comparationPrices()">비교</button>
+    <p id="result"></p>
+    <script>
+      function comparationPrices() {
+        var price1 = document.getElementById("price1").value;
+        var price2 = document.getElementById("price2").value;
+        var resultElement = document.getElementById("result");
+        if (price1 !== price2) {
+          if (price1 > price2) {
+            resultElement.textContent = "가격1이 가격2 보다 더 비쌉니다.";
+          } else {
+            resultElement.textContent = "가격2이 가격1 보다 더 비쌉니다.";
+          }
+        } else {
+          resultElement.textContent = "가격이 동일합니다.";
+        }
+      }
+    </script>
+  </body>
+</html>

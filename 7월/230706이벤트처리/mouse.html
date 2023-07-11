@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마우스이벤트</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border: 2px solid black;
+        transition: background-color 0.3s ease-in-out;
+      }
+      /* .box.clicked {
+        background-color: blue;
+        
+        transform: rotate(45deg);
+        transition: 0.5s;
+      } */
+      /* .box.hoverd{
+        opacity: 0.5;
+      } */
+      .box.active {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Mousedown이벤트</h1>
+    <div class="box" onmousedown="handleMouseDown(this)"></div> -->
+
+    <!-- <h1>Mousemove이벤트</h1>
+    <div class="box" onmousemove="handleMouseMove(this)"></div> -->
+
+    <!-- <h1>Mouseover이벤트</h1>
+    <div class="box" onmouseover="handleMouseOver(this)"></div> -->
+
+    <!-- <h1>Mouseout이벤트</h1>
+    <div class="box" onmouseout="handleMouseOut()"></div> -->
+
+    <h1>Mouseup이벤트</h1>
+    <div class="box" onmouseup="handleMouseUp()"></div>
+
+    <script>
+      //   function handleMouseDown(element) {
+      //     element.classList.add("clicked");
+      //   }
+
+      // function handleMouseMove(element) {
+      //     element.classList.add("clicked");
+      //   }
+
+      // function handleMouseOver(element) {
+      //     element.classList.add("hoverd");
+      //   }
+
+      // function handleMouseOut() {
+      //   var box = document.querySelector(".box");
+      //   box.classList.add("active");
+      // }
+      function handleMouseUp() {
+        var box = document.querySelector(".box");
+        box.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

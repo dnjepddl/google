@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeImg()">이미지변경</button>
+    <img src="1.jpg" alt="검무1" id="myImage" />
+    <!-- 새로운글자로 변경 -->
+    <button id="changeButton" onclick="toggleText()">텍스트변경</button>
+    <script>
+        let isImageToggled1 = false;
+
+function changeImg() {
+  var image = document.getElementById("myImage");
+
+  if (isImageToggled1) {
+    image.src = "1.jpg";
+    image.alt = "검무1";
+    isImageToggled1 = false;
+  } else {
+    image.src = "2.jpg";
+    image.alt = "검무2";
+    isImageToggled1 = true;
+  }
+}
+      //   button.innerText = "텍스트 변경"
+      // 새로운글자로 변경
+      let isTextToggled = false;
+      function toggleText() {
+        let button = document.getElementById("changeButton");
+        if (isTextToggled) {
+          button.innerText = "텍스트변경";
+          isTextToggled = false;
+        } else {
+          button.innerText = "새로운텍스트";
+          isTextToggled = true;
+        }
+      }
+    </script>
+</body>
+</html>

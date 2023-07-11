@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>23.05.25예시</title>
+</head>
+<body>
+    <!-- 상단 -->
+    <header>
+        <!-- 타이틀 -->
+        <h1>
+            MY <br/> web-design
+            <span> portfolio <br/>
+            collection</span>
+        </h1>
+        <!-- 오브젝트 -->
+        <div class="object">
+            <div class="border">
+                <img src="images/pngwing.com.png" alt="로고">
+            </div>
+        </div>
+    </header>
+    <!-- 오브젝트 -->
+    <section>
+        <!-- cont01 -->
+        <div class="contents">
+            <a href="#"><img src="images/Landscape-Photography-steps.jpg" alt=""></a>
+            <a href="#"><img src="images/6.webp" alt=""></a>
+            <a href="#"><img src="images/depositphotos_7371112-stock-photo-beautiful-nature.jpg" alt=""></a>
+            <a href="#"><img src="images/GettyImages-1093840488-5-scaled.jpg" alt=""></a>
+            <a href="#"><img src="images/pexels-jaime-reimer-2662116.jpg" alt=""></a>
+            <a href="#"><img src="images/다운로드 (1).jpg" alt=""></a>
+        </div>
+        <!-- cont02 -->
+        <div class="contents">
+            <a href="#"><img src="images/Landscape-Photography-steps.jpg" alt=""></a>
+            <a href="#"><img src="images/6.webp" alt=""></a>
+            <a href="#"><img src="images/depositphotos_7371112-stock-photo-beautiful-nature.jpg" alt=""></a>
+            <a href="#"><img src="images/GettyImages-1093840488-5-scaled.jpg" alt=""></a>
+            <a href="#"><img src="images/pexels-jaime-reimer-2662116.jpg" alt=""></a>
+            <a href="#"><img src="images/다운로드 (1).jpg" alt=""></a>
+        </div>
+        <!-- cont03 -->
+        <div class="contents">
+            <a href="#"><img src="images/Landscape-Photography-steps.jpg" alt=""></a>
+            <a href="#"><img src="images/6.webp" alt=""></a>
+            <a href="#"><img src="images/depositphotos_7371112-stock-photo-beautiful-nature.jpg" alt=""></a>
+            <a href="#"><img src="images/GettyImages-1093840488-5-scaled.jpg" alt=""></a>
+            <a href="#"><img src="images/pexels-jaime-reimer-2662116.jpg" alt=""></a>
+            <a href="#"><img src="images/다운로드 (1).jpg" alt=""></a>
+        </div>
+    </section>
+    <!-- nav -->
+    <nav>
+        <a href="#" class="active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </nav>
+    <!-- javascript -->
+    <script>
+        const navLink = document.querySelector("nav a");
+        navLink.addEventListener("click", function () {
+          navLink.classList.toggle("active");
+        });
+    <!-- footer -->
+    <footer>
+        <ul>
+            <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+        </ul>
+        <p>Copyright &copy; 2023 kimwoochul</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, 
+    minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrap {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        border-bottom: 1px solid #333;
+      }
+      .box {
+        width: 130px;
+        height: 50px;
+        background-color: #333;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 50px;
+        color: aqua;
+        opacity: 0.3;
+      }
+      .menu ul {
+        margin: 0 auto;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .menu li {
+        list-style: none;
+        float: left;
+        margin: 0 50px;
+      }
+      .submenu {
+        line-height: 50px;
+        font-size: 15px;
+      }
+      .submenu span {
+        border-right: 1px solid #a7a6a6;
+        padding-right: 5px;
+      }
+      .submenu span:last-child {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box">130x50</div>
+      <div class="menu">
+        <ul>
+          <li>ABOUT US</li>
+          <li>PRODUCTS</li>
+          <li>IR</li>
+          <li>SUSTAINBILITY</li>
+          <li>PR</li>
+          <li>SUPPORT</li>
+        </ul>
+      </div>
+      <div class="submenu">
+        <span>로그인</span>
+        <span>가입</span>
+      </div>
+    </div>
+  </body>
+</html>
