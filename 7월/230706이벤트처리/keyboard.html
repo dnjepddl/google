@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>키보드이벤트</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+      }
+      .box.active {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>keydown이벤트</h1>
+    <div class="box" tabindex="0" onkeydown="handeKeyDown(event)"></div>
+    <p>박스를 클릭한 후 키보드의 엔터키를 눌러주세요</p> -->
+
+    <!-- <h1>keypress이벤트</h1>
+    <div class="box" tabindex="0" onkeypress="handeKeyPress(event)"></div>
+    <p>박스를 클릭한 후 키보드의 엔터키를 눌러주세요</p> -->
+
+    <h1>keyup이벤트</h1>
+    <div class="box"></div>
+    <p>키보드의 엔터키를 눌러주세요</p>
+    <script>
+      // function handeKeyDown(event){
+      //   if(event.key === "Enter"){
+      //     var box =document.querySelector(".box");
+      //     box.classList.add("active")
+      //   }
+      // }
+
+      // function handeKeyPress(event) {
+      //   if (event.key === "Enter") {
+      //     var box = document.querySelector(".box");
+      //     box.classList.add("active");
+      //   }
+      // }
+
+      function handeKeyUp(event) {
+        var box = document.querySelector(".box");
+        box.classList.add("active");
+      }
+      window.addEventListener("keyup", handeKeyUp);
+    </script>
+  </body>
+</html>

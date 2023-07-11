@@ -1,0 +1,115 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 60px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.menu1{
+    width: 250px;
+    height: 100%;
+    line-height: 70px;
+    margin: 0 20px;
+    text-align: center;
+}
+.menu1 span{
+    padding: 0 15px;
+}
+.menu2{
+    width: 300px;
+    height: 100%;
+    line-height: 70px;
+    /* margin: 0 20px; */
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+/* .menu2 span{
+    width: 100px;
+} */
+.login{
+    border: 1px solid #333;
+    margin-left: 15px;
+    background-color:rgba(23, 89, 109, 0.767) ;
+    height: 80px;
+}
+/* 메인 */
+.main{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+
+}
+.search-bar{
+padding-top: 20px;
+width: 500px;
+height: 60px;
+}
+.shbar{
+    width: 500px;
+    height: 30px;
+    border: 1px solid #575252c2;
+    border-radius: 20px;
+}
+.button-bar{
+padding-top: 30px;
+width: 220px;
+height: ;
+display: flex;
+justify-content: space-around;
+}
+/* 하단 */
+footer{
+    height: 100px;
+    margin-top: auto;
+    background-color: #e7e5e5;
+}
+.bot{
+    width: 100%;
+    height: 200px;
+}
+.bot1{
+    height: 50px;
+    border-bottom: 1px solid #cec8c8;
+    line-height: 50px;
+    margin-left: 30px;
+}
+.bot2{
+    display: flex;
+    justify-content: space-between;
+}
+.bot2-1{
+    width: 300px;
+    text-align: center;
+}
+.bot2-1 a{
+    margin-right: 10px;
+}
+.bot2-2{
+    width: 300px;
+    text-align: center;
+}
+.bot2-2 a{
+    margin-left: 10px;
+}

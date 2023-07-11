@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>논리연산자예제</title>
+  </head>
+  <body>
+    <h1>논리 연산자 예제</h1>
+    <label for="age">나이: </label>
+    <input type="number" id="age" />
+    <label for="hascar">차 소유 여부: </label>
+    <select name="hascar" id="hascar">
+      <option value="true">있음</option>
+      <option value="false">없음</option>
+    </select>
+    <label for="haslicense">운전 면허 여부: </label>
+    <select name="haslicense" id="haslicense">
+      <option value="true">있음</option>
+      <option value="false">없음</option>
+    </select>
+    <button onclick="checkConditions()">조건 확인</button>
+    <p id="result"></p>
+    <script>
+      function checkConditions() {
+        var age = parseInt(document.getElementById("age").value);
+        var haslicense = document.getElementById("haslicense").value === "true";
+        var hascar = document.getElementById("hascar").value === "true";
+        var resultElement = document.getElementById("result");
+        // and 연산자 (&&)
+        if (age >= 18 && haslicense) {
+          resultElement.textContent = "성인이며 운전면허가 있습니다.";
+        }
+        // or 연산자 (||)
+        else if (haslicense || hascar) {
+          resultElement.textContent =
+            "운전면허가 있거나 차를 소유하고 있습니다.";
+        }
+        // not 연산자 (!)
+        else {
+          resultElement.textContent = "조건에 맞지 않습니다.";
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!-- parseInt >>>문자를 숫자로 변환 -->

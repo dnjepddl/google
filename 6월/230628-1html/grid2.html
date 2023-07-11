@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그리드 레이아웃</title>
+    <style>
+      #wrapper {
+        width: 600px;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(100px, auto);
+      }
+      .items {
+        padding: 10px;
+        background-color: #eee;
+      }
+      .items:nth-child(even) {
+        background-color: #bbb;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="items">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, et?
+        Labore eius, autem aspernatur quo repudiandae porro ipsa unde molestias
+        saepe sed aut suscipit, tenetur dolor deleniti obcaecati velit!
+        Suscipit.
+      </div>
+      <div class="items">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, et?
+        Labore eius, autem aspernatur quo repudiandae porro ipsa unde molestias
+        saepe sed aut suscipit, tenetur dolor deleniti obcaecati velit!
+        Suscipit.
+      </div>
+      <div class="items">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, et?
+        Labore eius, autem aspernatur quo repudiandae porro ipsa unde molestias
+        saepe sed aut suscipit, tenetur dolor deleniti obcaecati velit!
+        Suscipit.
+      </div>
+      <div class="items">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, et?
+        Labore eius, autem aspernatur quo repudiandae porro ipsa unde molestias
+        saepe sed aut suscipit, tenetur dolor deleniti obcaecati velit!
+        Suscipit.
+      </div>
+      <div class="items">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, et?
+        Labore eius, autem aspernatur quo repudiandae porro ipsa unde molestias
+        saepe sed aut suscipit, tenetur dolor deleniti obcaecati velit!
+        Suscipit.
+      </div>
+    </div>
+  </body>
+</html>

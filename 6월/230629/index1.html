@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>과일 구매하기</title>
+    <style>
+      .item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .item img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      .item span {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .quantity-input {
+        width: 50px;
+        text-align: center;
+      }
+
+      .total-price {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>과일 구매</h1>
+    <div class="item">
+      <img src="apple.jpg" alt="사과" />
+      <span>사&nbsp;&nbsp;&nbsp;과</span>
+      <input
+        type="number"
+        class="quantity-input"
+        id="appleQuantity"
+        min="0"
+        value="0"
+      />
+    </div>
+    <div class="item">
+      <img src="banana.jpg" alt="사과" />
+      <span>바나나</span>
+      <input
+        type="number"
+        class="quantity-input"
+        id="bananaQuantity"
+        min="0"
+        value="0"
+      />
+    </div>
+    <button onclick="calculateTotal()">총 가격 계산하기</button>
+    <p class="total-price" id="totalPrice">총 가격: 0원</p>
+    <script>
+      function calculateTotal() {
+        var applePrice = 2000;
+        var bananaPrice = 1000;
+
+        var appleQuantity = parseInt(
+          document.getElementById("appleQuantity").value
+        );
+        var bananaQuantity = parseInt(
+          document.getElementById("bananaQuantity").value
+        );
+        var total = applePrice * appleQuantity + bananaPrice * bananaQuantity;
+        // 콤마 추가 함수
+        function addCommas(number) {
+          return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        document.getElementById("totalPrice").textContent =
+          // `총 가격: ${addCommas(total)} 원`;
+          `총 가격: ${addCommas(total)} 원`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변수</title>
+  </head>
+  <body>
+    <script>
+      // 나이 계산하기
+      // 변수 선언
+      // var currentYear = 2023;
+      // var birthYear;
+      // var age;
+      // 입력창
+      // birthYear = prompt("마! 태어난 연도 입력해라 짜슥아!(YYYY)","");
+      // 나이 = 올해연도 - 태어난연도 + 1
+      // age = currentYear - birthYear + 1;
+      // document.write(currentYear + "년 현재 <br>");
+      // document.write(birthYear + "년에 태어난 사람의 나이는 " + age + "세 입니다.");
+
+      // 몸무게 계산하기
+      // 변수 선언
+      // var height;
+      // var weight = 69;
+      // var standardWeight;
+      // 입력창myWeight = prompt("현재  당신의 몸무게 그라가스 아니면 피들스틱인가요?(kg)","");
+      // height = prompt("키를 입력하주세요.(cm)","");
+      // 적정 몸무게 = (키 - 몸무게) * 0.9
+      // standardWeight = (height - weight) * 0.9;
+      // (키 - 100)* 0.9 = 키,비례,평균,몸무개
+      // document.write("키: " + height + "cm <br>");
+      // document.write("현재 몸무게: " + weight + "kg <br>");
+      // document.write("적정 몸무게: " + standardWeight + "kg");
+
+      // (키 - 100) * 0.9 = 키 비례 평균 몸무게
+      //   var height;
+      //   var averageWeight;
+      // 입력창
+      //   height = prompt("키를 입력하세요.(cm)", "");
+      // 몸무게 계산
+      //   averageWeight = Math.floor(height - 100) * 0.9;
+      //   document.write("키: " + height + "cm <br>");
+      //   document.write("키 비레 평균 몸무게: " + averageWeight + "kg");
+      // math.floor>>>소수점 없애기   math.round>>>반올림
+      // 과일 가격 계산
+      var apple = 2000;
+      var banana = 10000;
+      var allPrice = apple + banana;
+      // 출력
+      document.write("사과 가격: " + addCommas(apple) + "<br>");
+      document.write("바나나 가격: " + addCommas(banana) + "<br>");
+      document.write("총 가격은 " + addCommas(allPrice) + "입니다.");
+      // 콤마 추가 함수
+      function addCommas(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+    </script>
+  </body>
+</html>
